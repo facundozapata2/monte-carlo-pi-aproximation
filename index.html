@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Carlo Pi Approximation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="cuadrado" id="cuadrado">
+                <div class="circulo" id="circulo"></div>
+            </div>
+        </div>
+        <div class="result">
+            <p>Clicks dentro del cuadrado pero fuera del círculo: <span id="insideCount">0</span></p>
+            <p>Clicks dentro del círculo: <span id="insideCircleCount">0</span></p>
+            <p>Aproximación de Pi: <span id="piApproximation">0</span></p>
+            <p>Fórmula para PI: <span id="piFormula">4 × (Puntos dentro del círculo / Total de puntos)</span></p>
+            <p>π = 3.14159265358979323...</p>
+        </div>
+
+        <button id="resetBtn">Reiniciar</button>
+    </div>
+    <script src="monte-carlo.js"></script>
+</body>
+</html>
